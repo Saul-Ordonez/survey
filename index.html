@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>General Survey</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <div class="container">
+    <div class="jumbotron">
+      <h1>Survey about you!</h1>
+      <h3>Take a minute to fill out this quick survey about yourself</h3>
+    </div>
+      <div class="well">
+
+      <form  action="booking-complete.html" id="formOne">
+        <!-- name -->
+        <div class="form-group">
+          <label for="name">What's your name?</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <!-- desription -->
+        <div class="form-group">
+          <label for="age">What's your age?</label>
+          <input id="age" class="form-control" type="text">
+        </div>
+        <!-- date -->
+        <div class="form-group">
+          <label for="date">What's your favorite sport from the list below?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sport" value="Football">
+              Football
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sport" value="Basketball">
+              Basketball
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sport" value="Baseball">
+              Baseball
+            </label>
+          </div>
+        </div>
+        <!-- start and end time -->
+        <div class="form-group">
+          <label for="time">What time would you like your appointment to begin and end?</label>
+          <input id="time" class="form-control" type="text">
+        </div>
+        <button type="submit" name="button">Book Appointment</button>
+      </form>
+    </div>
+  </div>
 
   </body>
 </html>
